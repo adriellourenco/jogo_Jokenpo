@@ -43,6 +43,15 @@ public class Jokenpo {
 				System.out.println("A máquina escolheu Tesoura!");
 			}
 			
+			if (escolhaUsuario==escolhaMaquina) {
+				System.out.println("Empate!");
+			}
+			else if ((escolhaUsuario==1 && escolhaMaquina==3)||(escolhaUsuario==2 && escolhaMaquina==1)||(escolhaUsuario==3 && escolhaMaquina==2)) {
+				System.out.println("Você ganhou!");
+			} else {
+				System.out.println("Máquina ganhou!");
+			}
+			
 		} else {
 			System.out.println("Você não digitou um número entre 1 e 3 para escolher uma opção!");
 		}
